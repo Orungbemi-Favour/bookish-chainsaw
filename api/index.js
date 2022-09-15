@@ -47,4 +47,4 @@ app.post('/submit',generateUrl,async(req,res)=>{
     console.log(data);
     res.status(200).json(newURL)
 })
-
+mosule.exports = app;
