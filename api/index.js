@@ -3,8 +3,7 @@ const path = require("path");
 const fs = require('fs/promises');
 const app = express();
 const generateUrl = require('../Middlewares/generateUrl');
-
-app.use(express.static(path.resolve('../Public')))
+app.use(express.static(path.join('__dirname, ../Public')))
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 app.get('/',async(req,res)=>{
