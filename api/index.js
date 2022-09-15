@@ -3,11 +3,11 @@ const path = require("path");
 const fs = require('fs/promises');
 const app = express();
 const generateUrl = require('../Middlewares/generateUrl');
-app.use(express.static(path.join('__dirname, ../Public')))
+app.use(express.static(path.join('__dirname,../Public')))
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 app.get('/',async(req,res)=>{
-    const filepath = path.resolve('../index.html');
+    const filepath = path.join('__dirname,../index.html');
     res.sendFile(filepath);
 })
 app.get('/:slug',async(req,res)=>{ 
@@ -31,7 +31,7 @@ app.post('/submit',generateUrl,async(req,res)=>{
     console.log(req.slug);
     let data;
     try {
-        data = await fs.readFile(path.resolve('../data.json'), 'utf-8')
+        data = await fs.readFile(path.join('__dirname../data.json'), 'utf-8')
         data = JSON.parse(data)
     } catch (error) {
         data = []
@@ -43,7 +43,7 @@ app.post('/submit',generateUrl,async(req,res)=>{
         shortURL: `${req.protocol}://${req.get('host')}/${req.slug}`,
     }
     data.push(newURL);
-    await fs.writeFile(path.resolve('../data.json'),JSON.stringify(data),'utf-8')
+    await fs.writeFile(path.join("__dirname../data.json"),JSON.stringify(data),'utf-8')
     console.log(data);
     res.status(200).json(newURL)
 })
