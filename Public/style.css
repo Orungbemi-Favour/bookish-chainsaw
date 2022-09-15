@@ -1,0 +1,153 @@
+body{
+    overflow-x: hidden;
+}
+.Shortly{
+    color: hsl(260, 8%, 14%);
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: -10px;
+}
+
+a.Shortly:hover{
+    color: black;
+}
+
+.Features{
+    color: hsl(257, 7%, 63%);
+    font-weight: bold;
+}
+
+a.Features:hover {
+    color: hsl(260, 8%, 14%);
+  }
+
+.Features1{
+    color: hsl(257, 7%, 63%);
+    font-weight: bold;
+    margin-left: 400px;
+}
+
+a.Features1:hover {
+    color: hsl(260, 8%, 14%);
+}
+
+.Sign{
+    color: white;
+    background-color: hsl(180, 66%, 49%);
+    border-radius: 50px;
+    width: 100px;
+    text-align: center;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+a.Sign:hover{
+    color: white;
+}
+
+.more{
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.build{
+    color: hsl(257, 7%, 63%);
+}
+
+.Get{
+    color: white;
+    background-color: hsl(180, 66%, 49%);
+    border-radius: 50px;
+    width: 100px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px;
+    margin-left: -5px;
+}
+
+.main{
+    background-color:hsl(257, 27%, 26%);
+    height: auto;
+    padding: 20px;
+    margin-top: 50px;
+    width: auto;
+}
+
+.Shorten{
+    color: white;
+    background-color: hsl(180, 66%, 49%);
+    border-radius: 5px;
+    width: 150px;
+    height: 45px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 7px;
+    margin-left: 5px;
+}
+
+.first{
+    background-color: hsl(0, 0%, 75%);
+    width: auto;
+    height: auto;
+    padding-top: 10px;
+}
+
+.second{
+    color: black;
+}
+
+.third{
+    color:  hsl(180, 66%, 49%);
+    font-weight: bold;
+}
+
+.Copy{
+    color: white;
+    background-color:  hsl(180, 66%, 49%);
+    border-radius: 5px;
+    width: 100px;
+    border-color:  hsl(180, 66%, 49%);
+}
+
+.Track{
+    color: hsl(257, 7%, 63%);
+}
+
+.fourth{
+    text-align: center;
+}
+
+.icon{
+	width: 20px;
+	height: 20px;
+	border-radius: 100%;
+	line-height: 2.7rem;
+	text-align: center;
+	padding: 20px;
+    background-color: hsl(257, 27%, 26%);
+    margin-top: -20px;
+}
+
+.fifth{
+    background-image: url("images/bg-boost-desktop.svg");
+    background-color: hsl(257, 27%, 26%);
+    text-align: center;
+}
+
+.Get1{
+    color: white;
+    background-color: hsl(180, 66%, 49%);
+    border-radius: 50px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px;
+    width: 150px;
+    border: none;
+}
+
+.fab{
+    color: white;
+}
