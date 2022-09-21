@@ -1,12 +1,12 @@
 const express = require('express')
 const path = require("path");
 const app = express();
-const port = 5000;
 const generateUrl = require('../Middlewares/generateUrl');
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 
 let data = [];
+
 app.get('/',async(req,res)=>{
     const filepath = path.join(__dirname, "../index.html")
     res.sendFile(filepath);
