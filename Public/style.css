@@ -67,11 +67,10 @@ a.Sign:hover{
 }
 
 .main{
-    background-color:hsl(257, 27%, 26%);
-    height: auto;
+    background:hsl(257, 27%, 26%) url("images/bg-boost-desktop.svg");
+    height: 20vh;
     padding: 20px;
-    margin-top: 50px;
-    width: auto;
+    width: 80%;
 }
 
 .Shorten{
@@ -79,6 +78,7 @@ a.Sign:hover{
     background-color: hsl(180, 66%, 49%);
     border-radius: 5px;
     width: 150px;
+    border: none;
     height: 45px;
     text-align: center;
     font-weight: bold;
@@ -86,7 +86,13 @@ a.Sign:hover{
     padding: 7px;
     margin-left: 5px;
 }
-
+#text{
+    width: 500px; 
+    height: 40px;
+    border: 2px solid hsl(0, 87%, 67%);
+    border-radius: 2px;
+    margin: 0px 50px 20px;
+}
 .first{
     background-color: hsl(0, 0%, 75%);
     width: auto;
@@ -96,8 +102,14 @@ a.Sign:hover{
 
 .second{
     color: black;
+    margin-top: 20px;
 }
-
+.second1{
+    color: hsl(180, 66%, 49%);
+    margin-top: 20px;
+    font-weight: bold;
+    margin-right: px;
+}
 .third{
     color:  hsl(180, 66%, 49%);
     font-weight: bold;
@@ -109,7 +121,12 @@ a.Sign:hover{
     border-radius: 5px;
     width: 100px;
     border-color:  hsl(180, 66%, 49%);
+    float: right;
+    margin-bottom:10px;
+    margin-top: -40px;
+    margin-left: 10px;
 }
+
 
 .Track{
     color: hsl(257, 7%, 63%);

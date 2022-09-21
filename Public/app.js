@@ -6,9 +6,10 @@ function fetchUrls() {
   linkObject.forEach(link => {
     let Urlcontainer = `
   <div class="row" style="margin: 8px;">
-    <div class="col-sm-4" style="background-color: white;"><p class="second">${link.originalURL}</p></div>
-    <div class="col-sm-4" style="background-color: white;"></div>
-    <div class="col-sm-4" style="background-color: white;"><p id="copy_link">${link.shortURL}</p><button class="copy">Copy</button></div>
+    <div class="col-sm-3" style="background-color: white;"><p class="second">${link.originalURL}</p></div>
+    <div class="col-sm-3" style="background-color: white;"></div>
+    <div class="col-sm-2" style="background-color: white;"></div>
+    <div class="col-sm-4" style="background-color: white;"><p id="copy_link" class="second1">${link.shortURL}</p><button class="Copy">Copy</button></div>
   </div>
           `;
     Mynewurl.innerHTML += Urlcontainer;
@@ -50,7 +51,7 @@ var copyText = document.getElementById("copy_link");
 let Linkcontainer = document.getElementById("url-shortener");
 
 Linkcontainer.addEventListener("click", e => {
-  if (e.target.classList.contains("copy")) {
+  if (e.target.classList.contains("Copy")) {
     console.log(e.target);
     navigator.clipboard.writeText(e.target.previousElementSibling.textContent).then(()=>{
       console.log("Successful")
@@ -59,6 +60,9 @@ Linkcontainer.addEventListener("click", e => {
       console.log("error")
     })
   }
+  e.target.textContent = "Copied"
 });
+
+
 
 // fetchUrls();

@@ -11,7 +11,7 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container-fluid">
+    <div class="container">
         <nav class="navbar navbar-expand-sm">
             <ul class="navbar-nav">
               <li class="nav-item">
@@ -36,7 +36,7 @@
           </nav>
     </div>
 
-    <div class="container-fluid" style="margin-top: 20px;">
+    <div class="container" style="margin-top: 20px;">
         <div class="row">
             <div class="col-sm-6">
                 <h1 class="more">More than just<br> shorter links</h1>
@@ -48,18 +48,19 @@
     </div>
 
     <div class="container-fluid main">
-        <div>
-          <form action="/submit" method="post" id="url">
-            <input type="" style="width: 500px; height: 40px; margin-top: 10px;" name="url" id="text"><button class="Shorten" type="submit">Shorten It!</button>
-          </form>
-        </div>
+      <section id="add_link">
+        <form action="/shortURL" method="post" id="url">
+          <div class="row">
+            <div class="col-sm-7"><input type="text" class="form-control" id="text" placeholder="Shorten a link here..." name="text" required></div>
+            <div class="col-sm-5" ><button class="Shorten" type="submit">Shorten it!</button></div>
+          </div>
+        </form>
+      </section>
     </div> 
 
     <div class="container-fluid first" id="url-shortener">
       <div class="row" style="margin: 8px;">
-        <div class="col-sm-4" style="background-color: white;"><p class="second">https://www.frontendmentor.io</p></div>
         <div class="col-sm-4" style="background-color: white;"></div>
-        <div class="col-sm-4" style="background-color: white;"><p class="third">https://reLink/k4IKyk <button class="Copy">Copy</button></p></div>
       </div>
 
       <section class="container">
