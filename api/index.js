@@ -26,7 +26,7 @@ app.post('/submit',generateUrl,async(req,res)=>{
     let newURL= {
         originalURL: req.body.text,
         slug: req.slug,
-        shortURL: `http://localhost:${port}/${req.slug}`,
+        shortURL: `${req.protocol}://${req.get('host')}/${req.slug}`,
     }
     data.push(newURL);
     res.status(200).json(newURL)
