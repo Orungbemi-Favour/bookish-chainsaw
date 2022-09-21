@@ -55,12 +55,12 @@ Linkcontainer.addEventListener("click", e => {
     console.log(e.target);
     navigator.clipboard.writeText(e.target.previousElementSibling.textContent).then(()=>{
       console.log("Successful")
+      e.target.textContent = "Copied"
     },
     ()=>{
       console.log("error")
     })
   }
-  e.target.textContent = "Copied"
 });
 
 
